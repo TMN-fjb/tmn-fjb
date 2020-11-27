@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ブラックジャック</title>
+    <meta charset="utf-8">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/blackjack.js"></script>
+    <link rel="stylesheet" href="css/blackjack.css">
+</head>
+
+<body>
+    <div id="move">
+        <button id="connectbtn">通信開始</button>
+        <button onclick="history.back()">ゲーム選択に戻る</button>
+    </div>
+    <div id="cnt">
+        <button id="draw">ヒット</button>
+        <button id="end">スタンド</button>
+        <button id="double">ダブルダウン</button>
+        <button id="surrender">サレンダー</button>
+    </div>
+    <div id="wrap">
+        <div id="game">
+            <h1 id="system">ブラックジャック</h1>
+            <div id="host">
+                <h2 class="num">host</h2>
+                <p class="sum">00</p>
+                <div class="card"></div>
+            </div>
+        </div>
+        <div id="my" class="play">
+            <h3 class="num">あなた</h3>
+            <p class="sum"></p>
+            <div class="card"></div>
+        </div>
+    </div>
+    <div id="main">
+    </div>
+</body></html>

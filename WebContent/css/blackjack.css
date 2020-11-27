@@ -1,0 +1,162 @@
+html,
+body {
+    margin: 0;
+}
+
+body {
+    background-image: url("../img/bg.jpg");
+    background-color: rgba(255, 255, 255, 0.5);
+    background-blend-mode: lighten;
+    background-size: cover;
+}
+
+h1,
+h2,
+h3,
+p,
+div.card {
+    text-align: center;
+}
+
+#system {
+    background: #fff;
+}
+
+.card {
+    white-space: nowrap;
+    letter-spacing: -30px;
+}
+
+h3,
+p {
+    margin: 0;
+}
+
+#wrap {
+    display: flex;
+    justify-content: center;
+}
+
+#main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#my.play {
+    width: 49.5vw;
+    height: 49.5vh;
+    background-color: #0f03;
+    border: solid;
+    position: relative;
+}
+
+div.play {
+    width: 49%;
+    height: 24vh;
+    background-color: #0f03;
+    border: solid;
+    position: relative;
+}
+
+.play div {
+    text-align: center;
+}
+
+#game {
+    width: 49.5vw;
+}
+
+#move {
+    position: fixed;
+}
+
+#host {
+    height: 34vh;
+    width: 100%;
+}
+
+#host > .sum {
+    font-size: 1.5em;
+}
+
+#host > .num {
+    margin: 0;
+}
+
+.sum {
+    background: #fff5;
+}
+
+#my .sum {
+    font-size: 2em;
+}
+
+#my img.trnp {
+    width: calc(19vh);
+    height: 30vh;
+    margin-right: calc(-10vh);
+}
+
+img.trnp {
+    width: calc(9.5vh);
+    height: 15vh;
+    margin-right: calc(-5vh);
+    z-index: 50;
+    position: relative;
+    transition: 1s;
+}
+
+#host .trnp {
+    width: calc(12.8vh);
+    height: 20vh;
+}
+
+#host #back.trnp {
+    z-index: 0;
+}
+
+div#cnt {
+    display: flex;
+    position: fixed;
+    top: 100px;
+    left: 40vw;
+    align-content: center;
+    justify-content: space-around;
+    height: 100px;
+    width: 270px;
+    background-color: #0005;
+    z-index: 100;
+}
+
+div#cnt button {
+    display: block;
+    width: 30%;
+    height: 80%;
+}
+
+.blackjack::before {
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    display: block;
+    position: absolute;
+    content: "ブラックジャック!!";
+    background-color: red;
+    color: white;
+    z-index: 60;
+}
+
+.burst::after {
+    top: 5vh;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    display: block;
+    position: absolute;
+    content: "バースト...";
+    background-color: black;
+    color: white;
+    z-index: 60;
+}

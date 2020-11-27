@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <title>バカラ</title>
+    <link rel="stylesheet" href="css/baccara.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/baccara.js"></script>
+</head>
+
+<body>
+    <div id="request">
+        <div id="reqwrap">
+            <p>残高:<span id=""></span></p>
+            <p><label>賭け金<input type="number" value="100" min="100" step="100"></label></p>
+            <p>
+                <button onclick="player()">プレイヤー</button>
+                <button onclick="banker()">バンカー</button>
+                <button onclick="tie()">タイ</button>
+            </p>
+            <button onclick="location.href='./index.html'">ゲーム選択に戻る</button>
+        </div>
+    </div>
+    <h1 id="text">バカラ</h1>
+    <div id="main">
+        <div id="player">
+            <h2>プレイヤー</h2>
+            <p class="sum"></p>
+            <div class="card"></div>
+        </div>
+        <div id="banker">
+            <h2>バンカー</h2>
+            <p class="sum"></p>
+            <div class="card"></div>
+        </div>
+    </div>
+</body>
+
+</html>
